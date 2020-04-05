@@ -78,10 +78,11 @@ settings.register(
     values.LongStringValue(
         WORDS,
         'WORDS_INSTRUCTION_TO_POST_ANONYMOUSLY',
-        default=_(
-            '<span class="strong big">Please start posting anonymously</span> - '
-            'your entry will be published after you log in or create a new account.'
-        ),
+        #default=_(
+        #    '<span class="strong big">Please start posting anonymously</span> - '
+        #    'your entry will be published after you log in or create a new account.'
+        #),
+				default=_(''),
         description=_('Instruction to post anonymously'),
         help_text=_('HTML is allowed'),
         localized=True
@@ -653,8 +654,8 @@ settings.register(
     values.StringValue(
         WORDS,
         'WORDS_BE_THE_FIRST_TO_ANSWER_THIS_QUESTION',
-        default=_('Be the first one to answer this question!'),
-        description=_('Be the first one to answer this question!'),
+        default=_('Your Answer!'),
+        description=_('Your Answer!'),
         localized=True
     )
 )
