@@ -37,7 +37,6 @@ urlpatterns = patterns(
     '',
     url(r'^admin/', include(admin.site.urls)),
     url(r'^settings/', include('askbot.deps.livesettings.urls')),
-		url(r'^followit/', include('followit.urls')),
     url(r'^$', views.readers.index, name='index'),
     # BEGIN Questions (main page) urls. All this urls work both normally and through ajax
     url(

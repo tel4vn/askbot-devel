@@ -1,6 +1,6 @@
 from __future__ import print_function
 import ez_setup
-ez_setup.use_setuptools()
+##ez_setup.use_setuptools()
 from setuptools import setup, find_packages
 import sys
 

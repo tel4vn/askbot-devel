@@ -374,7 +374,7 @@ $.fn.authenticator = function () {
             submit_action = submit_login_with_password;
             var create_pw_link = $('a.create-password-account');
             if (create_pw_link.length > 0) {
-                create_pw_link.html(gettext('Create a password-protected account'));
+                create_pw_link.html(gettext('Sign Up'));
                 var url = create_pw_link.attr('href');
                 if (url.indexOf('?') !== -1) {
                     url = url.replace(/\?.*$/, '?login_provider=' + provider_name);

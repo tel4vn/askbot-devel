@@ -1,6 +1,7 @@
 <!-- template footer.html -->
 <div id="ground">
     <div class="content-wrapper">
+				<!--
         {% if settings.USE_LICENSE %}{# could be factored out into separate template #}
             {% if settings.LICENSE_USE_URL %}
             <div class="copyright">
@@ -31,9 +32,10 @@
                 />
                 {% endif %}
                 {{settings.APP_COPYRIGHT}} {% trans license=settings.LICENSE_TITLE %}Content on this site is licensed under a {{license}}{% endtrans %}
-            </div>
+            </div> 
             {% endif %}
         {% endif %}
+				-->
         <div class="footer-links" >
             <a href="{% url about %}">{% trans %}about{% endtrans %}</a><span class="link-separator"> |</span>
             <a href="{% url faq %}">{% trans %}faq{% endtrans %}</a><span class="link-separator"> |</span>
@@ -56,11 +58,11 @@
             </a>
             {% endif %}
         </div>
-        <div class="powered-link">
+        <!--<div class="powered-link">
             <a href="http://askbot.com" target="_blank">
                 Powered by Askbot version {{settings.ASKBOT_VERSION}}
             </a>
-        </div>
+        </div> -->
         <div class="clean"></div>
     </div>
 </div>

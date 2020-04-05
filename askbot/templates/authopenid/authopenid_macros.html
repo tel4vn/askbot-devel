@@ -21,7 +21,7 @@
     {% if show_buttons == True %}{# a hack #}
         <div id="login-icons">
             {% if major_login_providers %}
-            <ul class="login-icons large">
+            <!--<ul class="login-icons large">
                 {% for login_provider in major_login_providers %}
                     {% if login_provider.name != 'local' %}
                         {% if logged_in == True and login_provider.type == 'password' 
@@ -34,10 +34,10 @@
                         {% endif %}
                     {% endif %}
                 {% endfor %}
-            </ul>
+            </ul>-->
             {% endif %}
             {% if minor_login_providers %}
-            <ul class="login-icons small">
+            <!--<ul class="login-icons small">
                 {% for login_provider in minor_login_providers %}
                     {% if logged_in == True and login_provider.type == 'password' 
                         and login_provider.password_changeable == False
@@ -48,7 +48,7 @@
                     </li>
                     {% endif %}
                 {% endfor %}
-            </ul>
+            </ul> -->
             {% endif %}
         </div>
         <fieldset 

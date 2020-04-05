@@ -586,9 +586,10 @@ for the purposes of the AJAX comment editor #}
 {#todo: rename this to avatar #}
 {%- macro gravatar(user, size) -%}
 {% spaceless %}
+{#todo: HUEHUE #}
 <a class="js-avatar-box"
-    href="{{ user.get_absolute_url() }}"
-><img class="js-avatar gravatar" 
+		 		href="{{ user.get_absolute_url() }}">
+<img class="js-avatar gravatar" 
     width="{{size}}" height="{{size}}"
     src="{{ user.get_avatar_url(size) }}"
     title="{{user.username|escape}}" 
