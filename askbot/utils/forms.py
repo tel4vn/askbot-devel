@@ -107,7 +107,7 @@ class UserNameField(StrippedNonEmptyCharField):
             'forbidden': _('sorry, this name is not allowed, please choose another'),
             'missing': _('sorry, there is no user with this name'),
             'multiple-taken': _('sorry, we have a serious error - user name is taken by several users'),
-            'invalid': _('user name can only consist of letters, empty space and underscore'),
+            'invalid': _('user name can only consist of letters, numbers and ./-/_ characters'),
             'meaningless': _('please use at least some alphabetic characters in the user name'),
             'noemail': _('symbol "@" is not allowed')
         }

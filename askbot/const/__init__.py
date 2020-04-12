@@ -478,7 +478,9 @@ NOTIFICATION_DELIVERY_SCHEDULE_CHOICES_Q_NOANS = (
     ('n', _('never')),
 )
 
-USERNAME_REGEX_STRING = r'^[\w \-.@+\']+$'
+#USERNAME_REGEX_STRING = r'^[\w \-.@+\']+$'
+#USERNAME_REGEX_STRING = r'^[\w\-.@+\']+$'
+USERNAME_REGEX_STRING = r'^[a-zA-Z0-9_\-.]+$'
 
 GRAVATAR_TYPE_CHOICES = (('identicon', _('identicon')),
                          ('monsterid', _('monsterid')),
